@@ -70,19 +70,19 @@ body {
   justify-content: center;
 
   align-items: center;
-  border: 5px solid green;
+  /* border: 5px solid green; */
   max-width: 500px;
   height: 500px;
   margin: auto;
 
-  backdrop-filter: brightness(0.6);
+  backdrop-filter: brightness(0.5);
 }
 .content-menu {
   margin: auto;
   max-width: 600px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  backdrop-filter: brightness(0.6);
+  backdrop-filter: brightness(0.2);
   gap: 10px;
 }
 .menu-load {
@@ -95,16 +95,16 @@ body {
   font-size: 1.3rem;
   color: white;
   margin: 10px;
-  backdrop-filter: brightness(0.8);
+  backdrop-filter: brightness(0);
 }
 .menu-load img {
   width: 200px;
   height: 200px;
 }
 .load-page {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   text-align: center;
 }
 
