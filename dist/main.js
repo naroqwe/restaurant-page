@@ -1,1 +1,1 @@
-console.log("asd");
+(()=>{"use strict";window.addEventListener("load",(function(){const e=document.querySelector("#content"),t=document.createElement("div"),a=document.createElement("img"),d=document.createElement("p");d.innerHTML='"We make the best pizza"',a.src="/dist/images/chef.jpg",a.classList.add("load-img"),d.classList.add("load-paragraph"),t.classList.add("load-menu-page"),e.classList.add("content-homepage"),e.appendChild(t),t.appendChild(d),t.appendChild(a)}))})();
