@@ -2,7 +2,7 @@ import createHomePage from "./home";
 import createMenu from "./menu";
 
 document.addEventListener("DOMContentLoaded", () => {
-  createMenu();
+  createHomePage();
 
   const homeTab = document.querySelector("#home");
   const menuTab = document.querySelector("#menu");
@@ -20,5 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const clearContent = () => {
     const content = document.querySelector("#content");
     content.innerHTML = "";
+    content.className = "";
   };
 });
