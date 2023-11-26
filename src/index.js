@@ -2,7 +2,7 @@ import createHomePage from "./home";
 import createMenu from "./menu";
 
 document.addEventListener("DOMContentLoaded", () => {
-  createHomePage();
+  createMenu();
 
   const homeTab = document.querySelector("#home");
   const menuTab = document.querySelector("#menu");

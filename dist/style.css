@@ -8,10 +8,11 @@ body {
   width: 100vw;
   background: url("/dist/images/background-image.jpg");
   background-size: cover;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .header {
   /* position: absolute; */
+
   height: 200px;
   width: 100%;
   z-index: 1;
@@ -77,11 +78,33 @@ body {
   backdrop-filter: brightness(0.6);
 }
 .content-menu {
+  margin: auto;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  backdrop-filter: brightness(0.6);
+  gap: 10px;
 }
-.load-menu-page {
-  /* display: flex;
+.menu-load {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+  padding: 10px;
+  border: 1px solid white;
+  font-size: 1.3rem;
+  color: white;
+  margin: 10px;
+  backdrop-filter: brightness(0.8);
+}
+.menu-load img {
+  width: 200px;
+  height: 200px;
+}
+.load-page {
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   text-align: center;
 }
 

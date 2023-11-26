@@ -11,7 +11,7 @@ function createHomePage() {
 
   img.classList.add("load-img");
   paragraph.classList.add("load-paragraph");
-  menuPage.classList.add("load-menu-page");
+  menuPage.classList.add("load-page");
   content.classList.add("content-homepage");
 
   content.appendChild(menuPage);
