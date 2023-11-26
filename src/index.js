@@ -1,16 +1,24 @@
 import createHomePage from "./home";
+import createMenu from "./menu";
 
-window.addEventListener("load", createHomePage);
+document.addEventListener("DOMContentLoaded", () => {
+  createHomePage();
 
-let btns = ["home-tab", "menu-tab", "contact-tab"];
-
-btns.forEach(button, () => {
-  let btn = document.getElementsByClassName(button);
-  btn.addEventListener("click", () => {
-    console.log(btn);
+  const homeTab = document.querySelector("#home");
+  const menuTab = document.querySelector("#menu");
+  const contactTab = document.querySelector("#contact");
+  homeTab.addEventListener("click", () => {
+    clearContent();
+    createHomePage();
   });
+
+  menuTab.addEventListener("click", () => {
+    clearContent();
+    createMenu();
+  });
+
+  const clearContent = () => {
+    const content = document.querySelector("#content");
+    content.innerHTML = "";
+  };
 });
-
-// createHomePage();
-
-const homeTab = document.querySelector(".home-tab");
